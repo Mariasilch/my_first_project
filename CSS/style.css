@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    color: #000;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: underline;
+    color: #000;
+}
+
+input {
+    outline: none;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
