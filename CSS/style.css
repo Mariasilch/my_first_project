@@ -73,18 +73,19 @@ table {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 34px;
+    padding: 32px;
 }
 
 .logo {
     font: 700 24px/36px 'Montserrat', Arial, Tahoma, sans-serif;
     color: #fff;
+    letter-spacing: -0.6px;
 }
 
 .navigation a {
     color: #fff;
     font: 400 14px/24px 'Montserrat', Arial, Tahoma, sans-serif;
-    padding: 5px 13px;
+    padding: 5px 10.5px;
     transition: 0.3s;
 }
 
@@ -94,6 +95,10 @@ table {
 
 .navigation a:last-child {
     padding-right: 0;
+}
+
+.menu {
+    padding-top: 2px;
 }
 
 h1 {
@@ -141,6 +146,216 @@ h4 {
     background-size: 100%;
 }
 
+.services {
+    display: flex;
+    flex-direction: column;
+    padding-top: 90px;
+    padding-bottom: 100px;
+    padding-left: 30px;
+}
+
+.colgroup {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+}
+
+.col {
+    width: 355px;
+    text-align: center;
+    margin: 20px;
+    /*width: 350px;
+    float: left;
+    text-align: center;
+    margin: 25px;*/
+}
+
+.col1 {
+    width: 555px;
+    text-align: center;
+    margin: 15px;
+    padding-bottom: 70px;
+    text-align: center;
+    justify-content: center;
+}
+
+.heading-services {
+    color: rgb(85, 85, 85);
+    font: 400 20px/24px 'Montserrat', Arial, Tahoma, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.heading-description {
+    color: rgb(85, 85, 85);
+    font: 400 16px/24px 'Roboto Slab', 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 29px;
+}
+
+.heading-icon {
+    color: rgb(85, 85, 85);
+    font: 400 14px/24px 'Montserrat', Arial, Tahoma, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 25px;
+}
+
+.description-col {
+    color: rgb(85, 85, 85);
+    font: 400 14px/24px 'Roboto Slab', 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+
+.about .swiper-slide {
+    text-align: center;
+}
+
+.team {
+    padding-top: 90px;
+    padding-bottom: 100px;
+    background-color: rgb(248, 248, 248);
+}
+
+.about-img-wrapper {
+    position: relative;
+    overflow: hidden;
+    margin: 0 0 15px;
+}
+
+.about-img-wrapper:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    background: rgba(58, 58, 58, 0.5);
+    transition: .3s;
+    z-index: -1;
+}
+
+.about-img-wrapper ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    transition: .3s;
+    z-index: 10;
+}
+
+.about-img-wrapper img {
+    display: block;
+}
+
+
+.about-img-wrapper a {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+.team-members img {
+    height: 250px;
+}
+
+.about-img-wrapper a:hover {
+    background: #c0301c;
+}
+
+.swiper-slide:hover .about-img-wrapper:before {
+    opacity: 1;
+    z-index: 5;
+}
+
+.swiper-slide:hover .about-img-wrapper ul {
+    bottom: 30px;
+}
+
+.swiper-button-next {
+    right: 10px;
+    left: auto;
+    color: rgb(221, 221, 221);
+    background: rgb(85, 85, 85);
+    opacity: 0.2;
+    width: 35px;
+    height: 35px;
+    right: 0;
+    top: 42%;
+}
+
+.swiper-button-next:after {
+   font-size: 14px;
+}
+
+.swiper-button-prev {
+    right: 10px;
+    left: auto;
+    color: rgb(221, 221, 221);
+    background: rgb(85, 85, 85);
+    opacity: 0.2;
+    width: 35px;
+    height: 35px;
+    left: 0;
+    top: 42%;
+}
+
+.swiper-button-prev:after {
+    font-size: 14px;
+}
+
+.swiper-button-next:hover {
+    background: #c0301c;
+    transition: .3s;
+    opacity: 1;
+}
+
+.swiper-button-prev:hover {
+    background: #c0301c;
+    transition: .3s;
+    opacity: 1;
+}
+
+.about-name {
+    color: rgb(85, 85, 85);
+    font: 400 14px/24px 'Montserrat', Arial, Tahoma, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.position-about {
+    color: rgb(85, 85, 85);
+    font: 400 14px/24px 'Roboto Slab', 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+
+  
+/* background: #c0301c;*/
+
+
+  
+  
+  
+  
+@media (max-width: 768px) {
+    .services {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
 @media (max-width: 520px) {
 
     .mobile-menu {
@@ -177,4 +392,26 @@ h4 {
         flex-direction: column;
     }
 
-    
+    .services {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .colgroup {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col1 {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    @media (max-width: 380px) {
+        
+        .col {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+    }
