@@ -4,6 +4,12 @@ $(document).ready(function () {
     })
 
     const swiper = new Swiper('.swiper', {
+        breakpoints: {
+            320: {
+              slidesPerView: 4,
+              spaceBetween: 30
+            },
+          }
         loop: true,
         navigation: {
           nextEl: '.swiper-button-next',
@@ -11,7 +17,7 @@ $(document).ready(function () {
         },
         slidesPerView: 4,
         spaceBetween: 30,
-        speed: 400
+        speed: 400,
     });
 })
 
