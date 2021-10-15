@@ -4,20 +4,15 @@ $(document).ready(function () {
     })
 
     const swiper = new Swiper('.swiper', {
-        breakpoints: {
-            320: {
-              slidesPerView: 4,
-              spaceBetween: 30
-            },
-          }
         loop: true,
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
-        },
+        }
         slidesPerView: 4,
         spaceBetween: 30,
         speed: 400,
+        }
     });
 })
 

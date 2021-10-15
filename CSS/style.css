@@ -60,7 +60,6 @@ table {
 .container {
     max-width: 1170px;
     margin: 0 auto;
-    padding: 0 15px;
 }
 
 .main_banner {
@@ -146,53 +145,53 @@ h4 {
     background-size: 100%;
 }
 
-.services {
+
+
+.section-heading {
     display: flex;
     flex-direction: column;
-    padding-top: 90px;
-    padding-bottom: 100px;
-    padding-left: 30px;
+    padding-top: 95px;
+    align-items: center;
+    justify-content: center;
 }
+
+.heading {
+    color: rgb(85, 85, 85);
+    font: 400 20px/24px 'Montserrat', Arial, Tahoma, sans-serif;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+.line {
+    width: 55px;
+    height: 2px;
+    background: rgb(85, 85, 85);
+    margin: 0;
+}
+
+.heading-description {
+    color: rgb(85, 85, 85);
+    font: 400 16px/24px 'Roboto Slab', 'Times New Roman', Times, serif;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+
+
+
 
 .colgroup {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    margin: 25px;
+    padding-bottom: 80px;
 }
 
 .col {
     width: 355px;
-    text-align: center;
-    margin: 20px;
-    /*width: 350px;
-    float: left;
-    text-align: center;
-    margin: 25px;*/
-}
-
-.col1 {
-    width: 555px;
-    text-align: center;
     margin: 15px;
-    padding-bottom: 70px;
     text-align: center;
-    justify-content: center;
-}
-
-.heading-services {
-    color: rgb(85, 85, 85);
-    font: 400 20px/24px 'Montserrat', Arial, Tahoma, sans-serif;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.heading-description {
-    color: rgb(85, 85, 85);
-    font: 400 16px/24px 'Roboto Slab', 'Times New Roman', Times, serif;
-    text-align: center;
-    padding: 29px;
 }
 
 .heading-icon {
@@ -210,14 +209,25 @@ h4 {
 }
 
 
-.about .swiper-slide {
-    text-align: center;
+.gray-section {
+    background-color: rgb(248, 248, 248);
 }
 
-.team {
-    padding-top: 90px;
-    padding-bottom: 100px;
-    background-color: rgb(248, 248, 248);
+.col1 {
+    width: 555px;
+    margin-right: 30px;
+}
+
+.col1 .description-col {
+    text-align: left;
+}
+
+.swiper {
+    padding-bottom: 80px;
+}
+
+.about .swiper-slide {
+    text-align: center;
 }
 
 .about-img-wrapper {
@@ -234,9 +244,13 @@ h4 {
     left: 0;
     top: 0;
     opacity: 0;
-    background: rgba(58, 58, 58, 0.5);
+    background: rgba(85, 85, 85, 0.5);
     transition: .3s;
     z-index: -1;
+}
+
+.about-img-wrapper img {
+    display: block;
 }
 
 .about-img-wrapper ul {
@@ -251,11 +265,6 @@ h4 {
     z-index: 10;
 }
 
-.about-img-wrapper img {
-    display: block;
-}
-
-
 .about-img-wrapper a {
     width: 28px;
     height: 28px;
@@ -263,10 +272,6 @@ h4 {
     align-items: center;
     justify-content: center;
     transition: .3s;
-}
-
-.team-members img {
-    height: 250px;
 }
 
 .about-img-wrapper a:hover {
@@ -282,6 +287,18 @@ h4 {
     bottom: 30px;
 }
 
+.about-name {
+    color: rgb(85, 85, 85);
+    font: 400 14px/24px 'Montserrat', Arial, Tahoma, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.about-position {
+    color: rgb(85, 85, 85);
+    font: 400 14px/24px 'Roboto Slab', 'Times New Roman', Times, serif;
+    text-align: center;
+}
 .swiper-button-next {
     right: 10px;
     left: auto;
@@ -326,29 +343,9 @@ h4 {
     opacity: 1;
 }
 
-.about-name {
-    color: rgb(85, 85, 85);
-    font: 400 14px/24px 'Montserrat', Arial, Tahoma, sans-serif;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.position-about {
-    color: rgb(85, 85, 85);
-    font: 400 14px/24px 'Roboto Slab', 'Times New Roman', Times, serif;
-    text-align: center;
-}
 
 
-  
-/* background: #c0301c;*/
-
-
-  
-  
-  
-  
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
     .services {
         display: flex;
         flex-direction: column;
@@ -414,4 +411,4 @@ h4 {
             padding-right: 30px;
         }
 
-    }
+    }*/
