@@ -8,11 +8,10 @@ $(document).ready(function () {
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
-        }
+        },
         slidesPerView: 4,
         spaceBetween: 30,
         speed: 400,
-        }
     });
 })
 

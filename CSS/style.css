@@ -308,7 +308,7 @@ h4 {
     width: 35px;
     height: 35px;
     right: 0;
-    top: 42%;
+    top: 35%;
 }
 
 .swiper-button-next:after {
@@ -324,7 +324,7 @@ h4 {
     width: 35px;
     height: 35px;
     left: 0;
-    top: 42%;
+    top: 35%;
 }
 
 .swiper-button-prev:after {
@@ -345,7 +345,7 @@ h4 {
 
 
 
-/*@media (max-width: 768px) {
+@media (max-width: 768px) {
     .services {
         display: flex;
         flex-direction: column;
@@ -411,4 +411,4 @@ h4 {
             padding-right: 30px;
         }
 
-    }*/
+    }
