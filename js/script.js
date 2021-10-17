@@ -12,6 +12,32 @@ $(document).ready(function () {
         slidesPerView: 4,
         spaceBetween: 30,
         speed: 400,
+        breakpoints: {
+            320: {
+                slidesPerView: 1
+            },
+            560: {
+                slidesPerView: 2
+            },
+            768: {
+                slidesPerView: 3
+            },
+            900: {
+                slidesPerView: 4
+            }
+        },
+    });
+    $(function() {
+        var tab = $('#tabs .tabs-items > div'); 
+        tab.hide().filter(':first').show(); 
+        
+        $('#tabs .tabs-nav a').click(function(){
+            tab.hide(); 
+            tab.filter(this.hash).show(); 
+            $('#tabs .tabs-nav a').removeClass('active');
+            $(this).addClass('active');
+            return false;
+        }).filter(':first').click();
     });
 })
 

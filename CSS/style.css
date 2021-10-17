@@ -100,14 +100,14 @@ table {
     padding-top: 2px;
 }
 
-h1 {
+.header-text-heading {
     color: #fff;
     font: 400 48px/48px 'Montserrat', Arial, Tahoma, sans-serif;
     text-transform: uppercase;
     text-align: center;
 }
 
-h4 {
+.header-text {
     color: #fff;
     font: 400 20px/24px 'Roboto Slab', 'Times New Roman', Times, serif;
     padding: 40px 0 0;
@@ -148,11 +148,8 @@ h4 {
 
 
 .section-heading {
-    display: flex;
-    flex-direction: column;
     padding-top: 95px;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
 }
 
 .heading {
@@ -163,10 +160,11 @@ h4 {
 }
 
 .line {
+    display: block;
     width: 55px;
     height: 2px;
     background: rgb(85, 85, 85);
-    margin: 0;
+    margin: 0 auto;
 }
 
 .heading-description {
@@ -174,6 +172,7 @@ h4 {
     font: 400 16px/24px 'Roboto Slab', 'Times New Roman', Times, serif;
     padding-top: 30px;
     padding-bottom: 60px;
+    text-align: center;
 }
 
 
@@ -185,7 +184,7 @@ h4 {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    padding-bottom: 80px;
+    padding-bottom: 100px;
 }
 
 .col {
@@ -214,7 +213,7 @@ h4 {
 }
 
 .col1 {
-    width: 555px;
+    width: 49%;
     margin-right: 30px;
 }
 
@@ -223,7 +222,7 @@ h4 {
 }
 
 .swiper {
-    padding-bottom: 80px;
+    padding-bottom: 100px;
 }
 
 .about .swiper-slide {
@@ -251,6 +250,7 @@ h4 {
 
 .about-img-wrapper img {
     display: block;
+    margin: 0 auto;
 }
 
 .about-img-wrapper ul {
@@ -343,17 +343,151 @@ h4 {
     opacity: 1;
 }
 
-
-
-@media (max-width: 768px) {
-    .services {
-        display: flex;
-        flex-direction: column;
-    }
-
+#works .line {
+    margin-bottom: 30px;
 }
 
-@media (max-width: 520px) {
+.tabs-nav {
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.col-33 {
+    width: 33.3%;
+    min-width: 33.3%;
+    padding: 15px;
+}
+
+.col-inner {
+    position: relative;
+}
+
+.col-inner:hover .work-description {
+    opacity: 1;
+    z-index: 2;
+}
+
+.work-description {
+    position: absolute;
+    background-color: rgba(192, 48, 28, .7);
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    z-index: -1;
+    transition: .3s;
+}
+
+.work-description h5 {
+    font: 400 18px/24px 'Montserrat', Arial, Tahoma, sans-serif;;
+}
+
+.work-category {
+    font-size: 12px;
+    line-height: 24px;
+    margin: 0 0 20px;
+}
+
+.work-button {
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #c0301c;
+    display: inline-block;
+    background: #fff;
+    padding: 5px 25px;
+}
+
+.tabs-item .col-inner img {
+    display: block;
+}
+
+.tabs-nav li {
+    padding: 0;
+	list-style: none;
+}    
+.tabs-nav a {
+	display: block;
+	padding: 10px 14px; 
+	font-size: 16px;
+    line-height: 24px;
+	text-decoration: none;
+	text-align: center;
+    color: #555;
+}		
+
+.tabs-nav a.active {
+	color: #c0301c;
+}    
+
+.tabs-items {
+    padding-top: 45px;
+    padding-bottom: 100px;
+}
+
+.col-inner img {
+    height: 320px;
+    width: 360px;
+}
+
+#get-in-touch {
+    background: url(../Images/getInTouchBackground.jpg) no-repeat 50% 50%;
+    height: 370px;
+}
+
+.get-in-touch-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 90px;
+}
+
+.get-in-touch {
+    font: 400 30px/44px 'Roboto Slab', 'Times New Roman', Times, serif;
+    color: #fff;
+    text-align: center;
+}
+
+.caps {
+    text-transform: uppercase;
+}
+
+@media (max-width:580px) {
+    .col1 {
+        font-size: 14px;
+        padding-left: 30px;
+        width: 100%;
+        padding-bottom: 15px;
+    }
+
+    .col-33 {
+        min-width: 90%;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+}
+
+@media (max-width:640px) {
 
     .mobile-menu {
         display: inline-block;
@@ -389,6 +523,14 @@ h4 {
         flex-direction: column;
     }
 
+    .col1 {
+        padding-bottom: 15px;
+    }
+}
+
+
+@media (max-width:700px) {
+
     .services {
         display: flex;
         flex-direction: column;
@@ -398,17 +540,18 @@ h4 {
         display: flex;
         flex-direction: column;
     }
-
     .col1 {
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-bottom: 15px;
     }
+}
 
-    @media (max-width: 380px) {
-        
-        .col {
-            padding-left: 30px;
-            padding-right: 30px;
-        }
+@media (max-width:750px) {
 
+    .col-33 {
+        width: 50%;
+        align-items: center;
+        justify-content: center;
     }
+}
+
+
