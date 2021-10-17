@@ -43,6 +43,7 @@ body {
 a {
     text-decoration: none;
     color: #000;
+    transition: .3s;
 }
 
 input {
@@ -391,7 +392,7 @@ table {
 }
 
 .work-description h5 {
-    font: 400 18px/24px 'Montserrat', Arial, Tahoma, sans-serif;;
+    font: 400 18px/24px 'Montserrat', Arial, Tahoma, sans-serif;
 }
 
 .work-category {
@@ -463,6 +464,102 @@ table {
 
 .caps {
     text-transform: uppercase;
+}
+
+#blog .heading-description {
+    padding: 22px;
+}
+
+.post {
+    display: flex;
+    padding: 38px 0;
+}
+
+.post-image {
+    flex-basis: 460px;
+    flex-shrink: 0;
+    margin-right: 40px;
+    text-align: center;
+}
+
+.post-content {
+    flex-grow: 1;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    margin: 0 0 18px;
+}
+
+.post-date {
+    width: 76px;
+    height: 76px;
+    flex-basis: 76px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border: 2px solid #555;
+    margin-right: 25px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #777;
+    text-align: center;
+    font-family: 'Montserrat', Arial, Tahoma, sans-serif;
+}
+
+.post-month {
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.post-title h5 {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0 0 5px;
+    font-family: 'Montserrat', Arial, Tahoma, sans-serif;
+}
+
+.post-title h5 a:hover,
+.post-author a:hover,
+.post-link:hover {
+    color: #c0301c;
+}
+
+.post + .post {
+    border-top: 1px solid #ddd;
+}
+
+.post-author,
+.post-author a {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.85;
+    color: #777;
+    font-family: 'Roboto Slab', 'Times New Roman', Times, serif;
+}
+
+.post-content p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0 0 28px;
+    font-family: 'Roboto Slab', 'Times New Roman', Times, serif;
+    color: #555
+}
+
+.post-link {
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #777;
 }
 
 @media (max-width:580px) {
@@ -546,6 +643,13 @@ table {
         align-items: center;
         justify-content: center;
     }
+
+@media (max-width:940px) {
+    .post-image {
+        flex-basis:
+        margin-right: 20px;
+    }
 }
+
 
 
