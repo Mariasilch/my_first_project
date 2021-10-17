@@ -562,6 +562,78 @@ table {
     color: #777;
 }
 
+.swiper-wrapper {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
+}
+
+.swiper-slide-clients {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.swiper-pagination {
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    transition: .3s opacity;
+    z-index: 10;
+    display: block;
+}
+
+.swiper-pagination-bullet {
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.clients {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.clients-description {
+    font: 400 18px/30px 'Roboto Slab', 'Times New Roman', Times, serif;
+    color: rgb(85, 85, 85)
+}
+
+.clients-author {
+    font: 400 20px/30px 'Roboto Slab', 'Times New Roman', Times, serif;
+    color: rgb(85, 85, 85)
+}
+  
+.swiper-pagination-bullet:hover {
+    color: rgb(192, 48, 28);
+}
+
 @media (max-width:580px) {
     .col1 {
         font-size: 14px;
@@ -646,10 +718,57 @@ table {
 
 @media (max-width:940px) {
     .post-image {
-        flex-basis:
+        flex-basis: 340px;
         margin-right: 20px;
+    }
+
+    .post-date {
+        height: 65px;
+        width: 65px;
+        flex-basis: 65px;
+        font-size: 20px;
+        line-height: 1.25;
+        margin-right: 20px;
+    }
+
+    .post-month {
+        font-size: 14px;
+    }
+
+    .post-header {
+        margin-bottom: 0 0 15px;
+    }
+
+    .post-content p {
+        font-size: 14px;
+        line-height: 1.7;
+        margin-bottom: 0 0 15px;
+    }
+
+@media (max-width:768px) {
+    .post {
+        flex-direction: column;
+    }
+
+    .post-image {
+        flex-basis: auto;
+        margin: 0 0 15px;
+    }
+
+    .post-header {
+        justify-content: center;
+    }
+
+    .post-content {
+        text-align: justify;
     }
 }
 
+@media (max-width:320px) {   
+.post-title h5,
+    .post-author {
+        line-height: 1.5;
+    }
+}
 
 
