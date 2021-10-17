@@ -49,4 +49,9 @@ $(document).ready(function () {
             scrollTop: $($.attr(this, 'href')).offset().top
         }, 500);
     });
+    const swiper = new Swiper('.swiper', {
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+        },
 })
