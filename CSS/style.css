@@ -216,7 +216,7 @@ table {
     text-align: left;
 }
 
-.swiper {
+.swiper1 {
     padding-bottom: 100px;
 }
 
@@ -618,16 +618,56 @@ table {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 90px;
+    padding-bottom: 65px;
+}
+
+.clients img {
+    padding-right: 65px;
 }
 
 .clients-description {
     font: 400 18px/30px 'Roboto Slab', 'Times New Roman', Times, serif;
-    color: rgb(85, 85, 85)
+    color: rgb(85, 85, 85);
+    font-style: italic;
+    padding-bottom: 40px;
 }
 
 .clients-author {
     font: 400 20px/30px 'Roboto Slab', 'Times New Roman', Times, serif;
-    color: rgb(85, 85, 85)
+    color: rgb(85, 85, 85);
+}
+
+.swiper2 {
+padding-bottom: 60px;
+}
+
+.line1 {
+    display: block;
+    width: 55px;
+    height: 2px;
+    background: #fff;
+    margin: 0 auto;
+}
+
+.footer {
+    padding-top: 95px;
+    text-align: center;
+}
+
+.footer-text {
+    font: 400 12px/20px 'Roboto Slab', 'Times New Roman', Times, serif;
+    color: #fff;
+    padding-bottom: 100px;
+    padding-top: 30px;
+}
+
+.red-section {
+    background-color: rgb(192, 48, 28);
+}
+
+.social-media {
+    padding-bottom: 35px;
 }
   
 .swiper-pagination-bullet:hover {
