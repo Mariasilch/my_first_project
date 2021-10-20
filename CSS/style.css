@@ -19,6 +19,56 @@
     
     }*/
 
+@font-face {
+    font-family: 'Font Awesome 5 Brands';
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url("../fonts/font-awesome/fa-regular-400.eot");
+    src: url("../fonts/font-awesome/fa-brands-400.eot?#iefix") format("embedded-opentype"), 
+    url("../fonts/font-awesome/fa-brands-400.woff2") format("woff2"), 
+    url("../fonts/font-awesome/fa-brands-400.woff") format("woff"), 
+    url("../fonts/font-awesome/fa-brands-400.ttf") format("truetype"), 
+    url("../fonts/font-awesome/fa-brands-400.svg#fontawesome") format("svg"); }
+      
+    .fab {
+    font-family: 'Font Awesome 5 Brands';
+    font-weight: 400; }
+
+@font-face {
+        font-family: 'Font Awesome 5 Free';
+        font-style: normal;
+        font-weight: 400;
+        font-display: block;
+        src: url("../fonts/font-awesome/fa-regular-400.eot");
+        src: url("../fonts/font-awesome/fa-regular-400.eot?#iefix") format("embedded-opentype"), 
+        url("../fonts/font-awesome/fa-regular-400.woff2") format("woff2"), 
+        url("../fonts/font-awesome/fa-regular-400.woff") format("woff"), 
+        url("../fonts/font-awesome/fa-regular-400.ttf") format("truetype"), 
+        url("../fonts/font-awesome/fa-regular-400.svg#fontawesome") format("svg"); }
+          
+        .far {
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 400; }
+
+        @font-face {
+            font-family: 'Font Awesome 5 Free';
+            font-style: normal;
+            font-weight: 900;
+            font-display: block;
+            src: url("../fonts/font-awesome/fa-solid-900.eot");
+            src: url("../fonts/font-awesome/fa-solid-900.eot?#iefix") format("embedded-opentype"), 
+            url("../fonts/font-awesome/fa-solid-900.woff2") format("woff2"), 
+            url("../fonts/font-awesome/fa-solid-900.woff") format("woff"), 
+            url("../fonts/font-awesome/fa-solid-900.ttf") format("truetype"), 
+            url("../fonts/font-awesome/fa-solid-900.svg#fontawesome") format("svg"); }
+          
+          .fa,
+          .fas {
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900; }
+        
+
 
 * {
     margin: 0;
@@ -53,6 +103,42 @@ input {
 table {
     border-collapse: collapse;
 }
+
+input[type='text'], 
+input[type='email'],
+textarea {
+    border: 1px solid #555;
+    padding: 14px 20px;
+    width: 100%;
+    display: block;
+    outline: none;
+    color: #555;
+    font: 400 14px/24px 'Roboto Slab', 'Times New Roman', Times, serif;
+}
+
+input[type='text']:focus, 
+input[type='email']:focus,
+textarea:focus {
+    border-color: #c0301c;
+}
+
+textarea {
+    resize: vertical;
+    height: 104px;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #555;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: #555;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: #555;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: #555;
+  }
 
 .wrapper {
     overflow: hidden;
@@ -673,6 +759,80 @@ padding-bottom: 60px;
 .swiper-pagination-bullet:hover {
     color: rgb(192, 48, 28);
 }
+
+.contacts {
+    display: flex;
+}
+
+.contacts_form {
+    flex-basis: 730px;
+    flex-shrink: 0;
+}
+
+.contacts_text {
+    flex-grow: 1;
+    padding-right: 30px;
+}
+
+.contacts_item {
+    position: relative;
+    padding-left: 30px;
+    font-style: normal;
+    color: #555;
+}
+
+.contacts_item a {
+    color: #555;
+}
+
+.contacts_item + .contacts_item {
+    margin-top: 30px;
+}
+
+.contacts_item [class^='fa'] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 20px;
+}
+
+.contacts_item h6 {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Montserrat', Arial, Tahoma, sans-serif;
+    text-transform: uppercase;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-col {
+    width: calc(50% - 15px);
+}
+
+.form-button {
+    display: inline-block;
+    padding: 13px 31px;
+    border: 1px solid #555;
+    transition: .3s;
+    background: none;
+    color: #555;
+    font: 400 12px/20px 'Roboto Slab', 'Times New Roman', Times, serif;
+
+}
+
+.form-button:hover {
+    background: #c0301c;
+    color: #fff;
+    border-color: #c0301c;
+}
+
+
+
+
 
 @media (max-width:580px) {
     .col1 {
